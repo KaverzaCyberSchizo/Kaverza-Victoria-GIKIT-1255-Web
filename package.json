@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build & surge ./dist Kaverza-Victoria-gikit-basic-card-css.surge.sh"
+    "deploy": "npm run build & surge ./dist Kaverza-Victoria-gikit-tailwind-css.surge.sh"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",

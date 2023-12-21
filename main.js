@@ -51,6 +51,19 @@ const renderInputTextInOutout = function () {
 }
 const renderInputHighLightColor = (color) => domInput.style.backgroundColor = color;
 
+const renderTodo = (index, text) => {
+  const renderTodo = (index, text) => { 
+    const domTodoContainer = document.createElement('div'); 
+   
+    const domTodoButtonDelete = createActionButtonWithText('delete'); 
+    domTodoButtonDelete.onclick = onTodoDeleteClick; 
+   
+    domTodoContainer.innerText = `${index}. ${text}`; 
+   
+    domTodoContainer.appendChild(domTodoButtonDelete); 
+    domOutput.appendChild(domTodoContainer); 
+}
+
 // Render ends
 
 const createActionButtonWithText = (text) => {
